@@ -315,7 +315,7 @@ export default function App() {
   const [periods, setPeriods] = useLS<any[]>("hn_periods", []);
   const [periodDate, setPeriodDate] = useState("");
 
-  const [checkups, setCheckups] = const [checkups, setCheckups] = useLS<any[]>("hn_checkups", []);
+ const [checkups, setCheckups] = useLS<any[]>("hn_checkups", []);
   const [showCheckupForm, setShowCheckupForm] = useState(false);
   const [checkupForm, setCheckupForm] = useState<any>({ date: "", place: "", height: "", weight: "", bmi: "", sbp: "", dbp: "", ast: "", alt: "", gtp: "", alp: "", uricAcid: "", totalCholesterol: "", hdl: "", ldl: "", triglyceride: "", nonHdl: "", glucose: "", hba1c: "", creatinine: "", egfr: "", rbc: "", hematocrit: "", hemoglobin: "", mcv: "", mch: "", mchc: "", wbc: "", platelet: "", recheck: [], memo: "" });
   const [recheckInput, setRecheckInput] = useState({ item: "", timing: "", due: "" });
