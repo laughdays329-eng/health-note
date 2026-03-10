@@ -268,20 +268,7 @@ function MoodAnalysis({ moodLogs }: { moodLogs: any[] }) {
   );
 }
 
-const INITIAL_CHECKUP = {
-  id: 1, date: "2026-01-09", place: "健康診断",
-  height: "166.9", weight: "48.4", bmi: "17.5", sbp: "124", dbp: "74",
-  ast: "16", alt: "8", gtp: "27", alp: "42", uricAcid: "4.4",
-  totalCholesterol: "179", hdl: "104", ldl: "60", triglyceride: "50", nonHdl: "75",
-  glucose: "91", hba1c: "4.6", creatinine: "0.56", egfr: "93.8",
-  rbc: "379", hematocrit: "38.0", hemoglobin: "12.7", mcv: "101.0", mch: "33.6", mchc: "33.4", wbc: "49.10", platelet: "34.3",
-  recheck: [
-    { item: "赤血球数（わずかに低め）", timing: "6ヶ月後", due: "2026-07-09" },
-    { item: "MCV（わずかに高め）", timing: "6ヶ月後", due: "2026-07-09" },
-    { item: "血小板数（わずかに高め）", timing: "6ヶ月後", due: "2026-07-09" },
-    { item: "BMI（低体重）", timing: "3ヶ月後", due: "2026-04-09" },
-  ], memo: ""
-};
+const INITIAL_CHECKUP = null; 
 
 export default function App() {
   const [tab, setTab] = useLS("hn_tab", "気分");
